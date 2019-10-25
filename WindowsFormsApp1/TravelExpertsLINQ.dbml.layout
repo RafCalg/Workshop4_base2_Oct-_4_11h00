@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.625" name="TravelExpertsLINQ">
+  <DataContextMoniker Name="/TravelExpertsLINQDataContext" />
+  <nestedChildShapes>
+    <classShape Id="6b46d92a-6f74-4976-a67e-888e45571dec" absoluteBounds="3.5, 4.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/TravelExpertsLINQDataContext/Package" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7f34591c-422b-44f0-a52e-e26de2e19502" absoluteBounds="3.515, 4.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b5f25d59-6308-4ab7-a4fc-cc68a2c845ab" absoluteBounds="6.25, 1, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/TravelExpertsLINQDataContext/Packages_Products_Supplier" />
+      <nestedChildShapes>
+        <elementListCompartment Id="eab7b59e-82d0-4041-8e4d-6717637ccef8" absoluteBounds="6.265, 1.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="41ce3318-edca-4041-a975-8f1e0295974c" absoluteBounds="0.75, 1, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/TravelExpertsLINQDataContext/Product" />
+      <nestedChildShapes>
+        <elementListCompartment Id="419fbfbd-a9b2-42b6-904c-a2fc26b3e71b" absoluteBounds="0.765, 1.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="150a9322-fb16-4e97-906f-2b84350a4f45" absoluteBounds="3.5, 0.875, 2, 1.3862939453124998">
+      <DataClassMoniker Name="/TravelExpertsLINQDataContext/Products_Supplier" />
+      <nestedChildShapes>
+        <elementListCompartment Id="89217946-867a-4341-9f9a-8eda1b24abf2" absoluteBounds="3.515, 1.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="14226492-9e4d-4549-818f-87432f67a7d3" absoluteBounds="0.75, 4, 2, 1.193992513020834">
+      <DataClassMoniker Name="/TravelExpertsLINQDataContext/Supplier" />
+      <nestedChildShapes>
+        <elementListCompartment Id="022e23ee-8b2c-4ebf-87e8-d56983814ffb" absoluteBounds="0.765, 4.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 5.57774983723958); (7.25 : 5.57774983723958); (7.25 : 2.19399251302083)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TravelExpertsLINQDataContext/Package/Package_Packages_Products_Supplier" />
+      <nodes>
+        <classShapeMoniker Id="6b46d92a-6f74-4976-a67e-888e45571dec" />
+        <classShapeMoniker Id="b5f25d59-6308-4ab7-a4fc-cc68a2c845ab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 1.59699625651042); (6.25 : 1.59699625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/TravelExpertsLINQDataContext/Products_Supplier/Products_Supplier_Packages_Products_Supplier" />
+      <nodes>
+        <classShapeMoniker Id="150a9322-fb16-4e97-906f-2b84350a4f45" />
+        <classShapeMoniker Id="b5f25d59-6308-4ab7-a4fc-cc68a2c845ab" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.59699625651042); (3.04166666666667 : 1.59699625651042 : JumpStart); (3.20833333333333 : 1.59699625651042 : JumpEnd); (3.5 : 1.59699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TravelExpertsLINQDataContext/Product/Product_Products_Supplier" />
+      <nodes>
+        <classShapeMoniker Id="41ce3318-edca-4041-a975-8f1e0295974c" />
+        <classShapeMoniker Id="150a9322-fb16-4e97-906f-2b84350a4f45" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.00091745577925); (3.125 : 3.62591745577925); (3.125 : 1.20474612825521); (3.5 : 1.20474612825521)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/TravelExpertsLINQDataContext/Supplier/Supplier_Products_Supplier" />
+      <nodes>
+        <classShapeMoniker Id="14226492-9e4d-4549-818f-87432f67a7d3" />
+        <classShapeMoniker Id="150a9322-fb16-4e97-906f-2b84350a4f45" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="69ea1e39-7e0f-4c50-bb85-f042f3270a93" absoluteBounds="0.75, 5.625, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/TravelExpertsLINQDataContext/Agent" />
+      <nestedChildShapes>
+        <elementListCompartment Id="24f3170a-6637-437e-a553-469ece0e68ef" absoluteBounds="0.76500000000000012, 6.085, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
